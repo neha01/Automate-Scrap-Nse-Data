@@ -15,7 +15,7 @@ df=pd.read_csv('TCS.csv')
 
 df_ohlc=df
 
-##Mapping dates of csv file to mmatplotlib dates  format
+##Mapping dates of csv file to matplotlib dates  format
 df_ohlc['Date']=df_ohlc['Date'].map(mdates.datestr2num)
 ##df_volume['Date']=df_volume['Date'].map(mdates.datestr2num)
 
